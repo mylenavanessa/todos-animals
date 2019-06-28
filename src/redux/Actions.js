@@ -1,15 +1,15 @@
-export function FetchAnimals(){
+export function fetchAnimals(){
   return { type: 'FETCH_ANIMALS '}
 }
 
-export function FetchAnimalsSucess(animals, sucess){
+export function fetchAnimalsSucess(animals, sucess){
   return {
     type: 'FETCH_ANIMALS_SUCESS',
     payload: { animals, sucess }
   }
 }
 
-export function FetchAnimalsError(error){
+export function fetchAnimalsError(error){
   return {
     type: 'FETCH_ANIMALS_ERROR',
     payload: { error }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Animals from './componets/animals'
+import Animals from './components/animals'
 import { Provider } from 'react-redux'
 import store from './redux/Store'
 
