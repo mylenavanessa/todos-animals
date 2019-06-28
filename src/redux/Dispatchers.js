@@ -3,12 +3,12 @@ import api from '../services/api'
 
 export function dispatchFetchAnimals() {
     return async dispatch => {
-        dispatch(Creators.FetchAnimals())
+        dispatch(Creators.fetchAnimals())
         try {
             const { data: animals } = await api.get('/animals')
-            dispatch(Creators.FetchAnimalsSucess(animals, 'Busca feita com sucesso'))
+            dispatch(Creators.fetchAnimalsSucess(animals, 'Busca feita com sucesso'))
         } catch (e) {
-            dispatch(Creators.FetchAnimalsError("Não foi possivel buscar animais"))
+            dispatch(Creators.fetchAnimalsError("Não foi possivel buscar animais"))
         }
     }
 }
@@ -20,7 +20,7 @@ export function dispatchAddAnimal(animal) {
             await api.post('/animals', animal)
             dispatch(Creators.addAnimalSucess('Animal adicionado com sucesso'))
         }catch(e) {
-            dispatch(Creators.FetchAnimalsError('Não foi possivel adicionar animal'))
+            dispatch(Creators.addAnimalsError('Não foi possivel adicionar animal'))
         }
     }
 }
