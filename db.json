@@ -1,0 +1,11 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "tob",
+      "species": "cão",
+      "weight": "22",
+      "age": 5
+    }
+  ]
+}
