@@ -20,7 +20,7 @@ export function dispatchAddAnimal(animal) {
             await api.post('/animals', animal)
             dispatch(Creators.addAnimalSucess('Animal adicionado com sucesso'))
         }catch(e) {
-            dispatch(Creators.addAnimalsError('Não foi possivel adicionar animal'))
+            dispatch(Creators.addAnimalError('Não foi possivel adicionar animal'))
         }
     }
 }

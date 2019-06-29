@@ -6,6 +6,13 @@
       "species": "cão",
       "weight": "22",
       "age": 5
+    },
+    {
+      "name": "sdf",
+      "species": "sdf",
+      "weight": "234",
+      "age": "10",
+      "id": 2
     }
   ]
 }
